@@ -25,7 +25,7 @@ public class SeaConditionsAPIClient {
                 return response.body();
             }
         } catch (IOException | InterruptedException e) {
-            e.printStackTrace();
+            e.printStackTrace(System.err);
         }
         return "";
     }
